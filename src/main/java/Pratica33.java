@@ -10,7 +10,7 @@ public class Pratica33 {
     public static void main(String[] args) {
         Matriz matriz1 = new Matriz(3, 3);
         double[][] n = matriz1.getMatriz();
-        n[0][0] = 1;
+        n[0][0] = 2;
         n[0][1] = 1;
         n[0][2] = 1;
         n[1][0] = 1;
@@ -21,7 +21,7 @@ public class Pratica33 {
         n[2][2] = 1;
         Matriz matriz2 = new Matriz(3, 3);
         double[][] n2 = matriz2.getMatriz();
-        n2[0][0] = 1;
+        n2[0][0] = 0;
         n2[0][1] = 1;
         n2[0][2] = 1;
         n2[1][0] = 1;

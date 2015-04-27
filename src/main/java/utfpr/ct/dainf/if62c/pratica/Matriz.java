@@ -49,7 +49,7 @@ public class Matriz {
         Matriz t = new Matriz(mat[0].length, mat.length);
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
-                t.mat[i][j] = mat[i][j]+mat[i][j];
+                t.mat[i][j] = m.mat[i][j]+mat[i][j];
             }
         }
         return t;
@@ -69,7 +69,7 @@ public class Matriz {
                 double aux = 0;  
                 for (int i=0;i < mat[row].length;i++)  
                 {  
-                    aux= aux + mat[row][i]*mat[i][column];  
+                    aux= aux + m.mat[row][i]*mat[i][column];  
                 }  
                 t.mat[row][column]=aux;  
                   
