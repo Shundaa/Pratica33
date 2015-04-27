@@ -6,28 +6,6 @@ import utfpr.ct.dainf.if62c.pratica.Matriz;
  * @author Wilson Horstmeyer Bogado <wilson@utfpr.edu.br>
  */
 public class Pratica33 {
-    /**
-     * Retorna a soma desta matriz com a matriz recebida como argumento.
-     * @param m A matriz a ser somada
-     * @return A soma das matrizes
-     */
-    public Matriz soma(Matriz m) {
-        throw new UnsupportedOperationException("Soma de matrizes não implementada.");
-    }
-
-    /**
-     * Retorna o produto desta matriz com a matriz recebida como argumento.
-     * @param m A matriz a ser multiplicada
-     * @return O produto das matrizes
-     */
-    public Matriz prod(Matriz m) {
-        Matriz t = new Matriz(mat[0].length, mat.length);
-        for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < mat[i].length; j++) {
-                t.mat[j][i] = mat[i][j];
-            }
-        }
-    }
 
     public static void main(String[] args) {
         Matriz orig = new Matriz(3, 2);
@@ -53,6 +31,9 @@ public class Pratica33 {
         n2[0][1] = 2;
         n2[1][0] = 2;
         n2[1][1] = 2;
-        System.out.println("Matriz original: " + matriz1);
+        Matriz soma = matriz1.soma(matriz1);
+        Matriz prod = matriz1.prod(matriz1);
+        System.out.println("Matriz original: " + soma);
+        System.out.println("Matriz original: " + prod);
     }
 }
